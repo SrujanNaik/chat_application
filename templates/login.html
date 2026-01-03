@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANT meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page for chat application">
+    <meta name="author" content="Srujan">
+
+    <title>Login</title>
+
+    <!-- Always use absolute path for Go static files -->
+    <link rel="stylesheet" href="/static/login_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="login-box" method="POST" action="/login">
+            <h1>Welcome</h1>
+            <p>Please sign up</p>
+
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+	    <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
+
